@@ -1,6 +1,6 @@
 # Start with a minimal base image. This image will not need Go installed,
 # as we're copying a pre-compiled binary.
-FROM --platform=linux/amd64 debian:bullseye-slim AS runner
+FROM --platform=linux/amd64 debian:12.11-slim AS runner
 
 # Install dependencies required by your application or the init script.
 RUN apt update && \
