@@ -7,6 +7,7 @@ RUN apt update && \
     apt install wget -y && \
     wget -O PPL.deb https://dl4jz3rbrsfum.cloudfront.net/software/PPL_64bit_v1.4.1.deb && \
     dpkg -i PPL.deb && \
+    rm PPL.deb && \
     apt clean && \
     rm -rf /var/lib/apt/lists/*
 
